@@ -16,6 +16,12 @@ Principais Funcionalidades da Classe CsvProcessor:
 
 Essa abordagem demonstra como o uso de classes em Python pode estruturar operações em torno de um objeto central (no caso, um arquivo CSV), melhorando a clareza e a modularidade do código.
 
+Adicionei ao projeto as ferramentas Black e Flake8 com o pre-commit para melhorar a qualidade do código e garantir consistência no estilo de programação. O Black é um formatador automático de código que segue as convenções do PEP 8 e aplica um estilo de formatação consistente, enquanto o Flake8 é uma ferramenta de linting que verifica o código em busca de erros de estilo, erros de sintaxe e outros problemas.
+
+A integração com pre-commit permite que essas ferramentas sejam executadas automaticamente antes de cada commit, garantindo que o código esteja sempre formatado corretamente e sem problemas de estilo. Isso melhora a manutenção do projeto, facilita o trabalho em equipe e mantém o código limpo e organizado.
+
+A configuração das ferramentas foi feita no arquivo .pre-commit-config.yaml, e o pre-commit foi configurado para rodar o Black e o Flake8 em todos os arquivos do repositório, garantindo a consistência ao longo do desenvolvimento.
+
 
 
 
