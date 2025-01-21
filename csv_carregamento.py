@@ -5,7 +5,7 @@ from datetime import datetime
 start = time.time()
 arquivo_csv = 'data/exemplo.csv'
 filtro = 'estado'
-limite = 'SP'
+limite = 'MG'
 
 # Instanciando o objeto CsvProcessor e carregando o arquivo CSV
 arquivo_CSV = CsvProcessor(arquivo_csv)
@@ -14,7 +14,7 @@ arquivo_CSV.carregar_csv()
 # Filtrando os dados
 df_filtrado = arquivo_CSV.filtrar_por_estado(filtro, limite)
 
-# Verificando o conteúdo filtrado (opcional)
+#Verificando o conteúdo filtrado (opcional)
 print(df_filtrado)
 
 #Gerando horario

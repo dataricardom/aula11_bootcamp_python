@@ -26,8 +26,7 @@ class CsvProcessor:
                 self.df_filtrado.to_csv(file_path, index=False, encoding='utf-8-sig')
                 print(f"Arquivo filtrado salvo em {file_path}")
             else:
-                self.df.to_csv(file_path, index=False, encoding='utf-8-sig')
-                print(f"Arquivo original salvo em {file_path}")
+                print(f"Nenhum arquivo foi salvo pois não há modificação")
             return True
         except Exception as e:
             print(f"Erro ao salvar arquivo: {e}")
