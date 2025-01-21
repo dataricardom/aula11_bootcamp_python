@@ -4,9 +4,9 @@ from datetime import datetime
 
 # Definindo o caminho do arquivo e os parâmetros de filtro
 start = time.time()
-arquivo_csv = "data/exemplo.csv"
-filtro = "estado"
-limite = "MG"
+arquivo_csv = "data/campeonato-brasileiro-gols.csv"
+filtro = "clube"
+limite = "Vasco"
 
 # Instanciando o objeto CsvProcessor e carregando o arquivo CSV
 arquivo_CSV = CsvProcessor(arquivo_csv)
@@ -22,7 +22,7 @@ print(df_filtrado)
 timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 
 # Salvando os dados filtrados em um novo arquivo
-arquivo_CSV.salvar_dados(f"data/exemplo_filtrado-{timestamp}.csv")
+arquivo_CSV.salvar_dados(f"data/Gols-Vasco-Brasileirão-{timestamp}.csv")
 
 # Medindo o tempo de execução
 stop = time.time()
