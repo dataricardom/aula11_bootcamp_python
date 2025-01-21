@@ -1,5 +1,5 @@
 import time
-from csv_class_load import CsvProcessor
+from Class.csv_class_load import CsvProcessor
 from datetime import datetime
 
 # Definindo o caminho do arquivo e os parâmetros de filtro
